@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		034A115CFB09157FF7774084 /* libPods-BitriseSampleUnitAndOtherTestsAppTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A1C2291B3F12AB7FE98610D /* libPods-BitriseSampleUnitAndOtherTestsAppTests.a */; };
+		A3164CDF1AB6EAC00004C546 /* KIFSampleTest.m in Sources */ = {isa = PBXBuildFile; fileRef = A3164CDE1AB6EAC00004C546 /* KIFSampleTest.m */; };
 		BA0609DC1AA610E100F24A40 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BA0609DB1AA610E100F24A40 /* main.m */; };
 		BA0609DF1AA610E100F24A40 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BA0609DE1AA610E100F24A40 /* AppDelegate.m */; };
 		BA0609E21AA610E100F24A40 /* BitriseSampleUnitAndOtherTestsApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = BA0609E01AA610E100F24A40 /* BitriseSampleUnitAndOtherTestsApp.xcdatamodeld */; };
@@ -33,6 +34,7 @@
 		4A1C2291B3F12AB7FE98610D /* libPods-BitriseSampleUnitAndOtherTestsAppTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-BitriseSampleUnitAndOtherTestsAppTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		61199DC195E180BBB3AA23C7 /* Pods-BitriseSampleUnitAndOtherTestsAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BitriseSampleUnitAndOtherTestsAppTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-BitriseSampleUnitAndOtherTestsAppTests/Pods-BitriseSampleUnitAndOtherTestsAppTests.release.xcconfig"; sourceTree = "<group>"; };
 		7E1D6E3986AFC399154EA64A /* Pods-BitriseSampleUnitAndOtherTestsAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BitriseSampleUnitAndOtherTestsAppTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BitriseSampleUnitAndOtherTestsAppTests/Pods-BitriseSampleUnitAndOtherTestsAppTests.debug.xcconfig"; sourceTree = "<group>"; };
+		A3164CDE1AB6EAC00004C546 /* KIFSampleTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KIFSampleTest.m; sourceTree = "<group>"; };
 		BA0609D61AA610E100F24A40 /* BitriseSampleUnitAndOtherTestsApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BitriseSampleUnitAndOtherTestsApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA0609DA1AA610E100F24A40 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BA0609DB1AA610E100F24A40 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -137,6 +139,7 @@
 				BA7CF5C91AA61A7A00DEB100 /* KiwiSampleSpec.m */,
 				BA0609F81AA610E100F24A40 /* BitriseSampleUnitAndOtherTestsAppTests.m */,
 				BA0609F61AA610E100F24A40 /* Supporting Files */,
+				A3164CDE1AB6EAC00004C546 /* KIFSampleTest.m */,
 			);
 			path = BitriseSampleUnitAndOtherTestsAppTests;
 			sourceTree = "<group>";
@@ -296,6 +299,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BA7CF5CA1AA61A7A00DEB100 /* KiwiSampleSpec.m in Sources */,
+				A3164CDF1AB6EAC00004C546 /* KIFSampleTest.m in Sources */,
 				BA0609F91AA610E100F24A40 /* BitriseSampleUnitAndOtherTestsAppTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

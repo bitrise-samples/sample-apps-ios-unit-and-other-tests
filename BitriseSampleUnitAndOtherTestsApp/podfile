@@ -13,4 +13,5 @@ platform :ios, '8.0'
 # Add Kiwi as an exclusive dependency for the Tests target
 target :BitriseSampleUnitAndOtherTestsAppTests, :exclusive => true do
   pod 'Kiwi'
+  pod 'KIF'
 end
