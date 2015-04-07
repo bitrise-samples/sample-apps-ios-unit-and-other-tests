@@ -6,35 +6,43 @@
 //  Copyright (c) 2015 Bitrise. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
-#import <XCTest/XCTest.h>
+#import <Quick/Quick.h>
+#import <Nimble/Nimble.h>
+#import "ViewController.h"
 
-@interface BitriseSampleUnitAndOtherTestsAppTests : XCTestCase
+QuickSpecBegin(ViewControllerSpec)
 
-@end
+__block ViewController *viewController = nil;
+beforeEach(^{
+    viewController = [[ViewController alloc] init];
+});
 
-@implementation BitriseSampleUnitAndOtherTestsAppTests
+describe(@"-viewDidLoad", ^{
+    beforeEach(^{
+        // Method #1: Access the view to trigger -[ViewController viewDidLoad].
+        [viewController view];
+    });
+    
+    it(@"displays the button", ^{
+        expect(viewController.testButton.text).to(equal(@"Button"))
+    });
+});
 
-- (void)setUp {
-    [super setUp];
-    // Put setup code here. This method is called before the invocation of each test method in the class.
-}
+describe(@"the view", ^{
+    beforeEach(^{
+        // Method #2: Triggers .viewDidLoad(), .viewWillAppear(), and .viewDidAppear() events.
+        [viewController beginAppearanceTransition:YES animated:NO];
+        [viewController endAppearanceTransition];
+    });
+    // ...
+});
 
-- (void)tearDown {
-    // Put teardown code here. This method is called after the invocation of each test method in the class.
-    [super tearDown];
-}
+describe(@"-viewWillDisappear", ^{
+    beforeEach(^{
+        // Method #3: Directly call the lifecycle event.
+        [viewController viewWillDisappear:NO];
+    });
+    // ...
+});
 
-- (void)testExample {
-    // This is an example of a functional test case.
-    XCTAssert(YES, @"Pass");
-}
-
-- (void)testPerformanceExample {
-    // This is an example of a performance test case.
-    [self measureBlock:^{
-        // Put the code you want to measure the time of here.
-    }];
-}
-
-@end
+QuickSpecEnd
