@@ -14,11 +14,11 @@
 		<string>https://github.com/bazscsa/sample-apps-ios-unit-and-other-tests.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>tmp-kif-test/BitriseSampleUnitAndOtherTestsApp.xcworkspace</string>
+	<string>Kiwi/BitriseSampleUnitAndOtherTestsApp/BitriseSampleUnitAndOtherTestsApp.xcworkspace</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>D8379880FB320D8E1DBD87F3490D48DFF1337CDB</key>
-		<string>../..</string>
+		<string>../../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
 	<string>https://github.com/bazscsa/sample-apps-ios-unit-and-other-tests.git</string>
